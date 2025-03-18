@@ -1,4 +1,9 @@
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## 🚀 Frio Blog
+
+You can check the website at [https://frio-blog.vercel.app](https://frio-blog.vercel.app). 🎉
 
 ## Getting Started
 
