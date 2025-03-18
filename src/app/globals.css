@@ -1,6 +1,100 @@
 @import "tailwindcss";
 
-:root {
+@utility mainPage {
+  @apply bg-gray-100 dark:bg-gray-700 min-h-screen p-6;
+}
+
+@utility latestPost {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden;
+}
+
+@utility otherPosts {
+  @apply grid grid-cols-1 gap-6 max-w-3xl mx-auto;
+}
+
+@utility hasMoreText {
+  @apply text-black dark:text-white text-center py-4 min-h-[50px];
+}
+
+/* Navigation Menu Styling */
+@utility navMenu {
+  @apply bg-white dark:bg-gray-800 shadow-md sticky top-0 left-0 z-50 w-full;
+}
+
+@utility navMenuSize {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+@utility navMenuContent {
+  @apply flex justify-between h-16;
+}
+
+@utility navMenuLogo {
+  @apply flex items-center flex-shrink-0;
+}
+
+@utility navMenuButtons {
+  @apply hidden sm:flex sm:items-center sm:space-x-4;
+}
+
+@utility navMenuLinks {
+  @apply text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium;
+}
+
+@utility navMenuMobile {
+  @apply sm:hidden flex items-center;
+}
+@utility navMenuMobileIcon {
+  @apply text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none;
+}
+
+@utility navMenuLinksMobile {
+  @apply block text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium;
+}
+
+/* Blog Card Styling */
+@utility blogCard {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md transition-shadow;
+}
+
+@utility blogCard-title {
+  @apply flex justify-between items-center text-black dark:text-white text-xl font-semibold mb-2;
+}
+
+@utility blogCard-body {
+  @apply text-gray-700 dark:text-gray-300 line-clamp-1;
+}
+
+@utility blogCard-more {
+  @apply text-blue-500 mt-2 inline-block;
+}
+
+/* Blog Post Styling */
+@utility blogPost {
+  @apply min-h-screen bg-gray-100 p-4 sm:p-6;
+}
+
+@utility blogPostMain {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md max-w-3xl mx-auto sm:p-6;
+}
+
+@utility blogPost-title {
+  @apply text-black dark:text-white text-2xl font-bold mb-4;
+}
+
+@utility blogPost-body {
+  @apply text-gray-700 dark:text-gray-300 mb-4;
+}
+
+@utility blogPost-meta {
+  @apply text-sm text-gray-500;
+}
+
+@utility blogPost-back {
+  @apply text-blue-500 mt-4 inline-block;
+}
+
+/*:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +117,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
