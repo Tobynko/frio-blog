@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { postType } from "../src/app/actions/fetchPosts";
+import { postType } from "../src/app/actions/fetchPosts.d";
 
 export default function BlogPost({ post }: { post: postType }) {
   return (

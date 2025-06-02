@@ -5,7 +5,7 @@ import { Spinner } from "./spinner";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { fetchPosts } from "../src/app/actions/fetchPosts";
-import { postType } from "../src/app/actions/fetchPosts";
+import { postType } from "../src/app/actions/fetchPosts.d";
 
 export default function BlogCardList({
   initialPosts,
