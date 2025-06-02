@@ -3,8 +3,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { postType } from "../src/app/actions/fetchPosts";
 
-export default function BlogPost({ post }) {
+export default function BlogPost({ post }: { post: postType }) {
   return (
     <motion.div
       className="blogPostMain"

@@ -1,11 +1,17 @@
 "use client";
 
-import BlogCard from "./BlogCard";
+import BlogCard from "./blogCard";
+import { Spinner } from "./spinner";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { fetchPosts } from "../src/app/actions/fetch-posts.js";
+import { fetchPosts } from "../src/app/actions/fetchPosts";
+import { postType } from "../src/app/actions/fetchPosts";
 
-export default function BlogCardList({ initialPosts }) {
+export default function BlogCardList({
+  initialPosts,
+}: {
+  initialPosts: postType[];
+}) {
   const [posts, setPosts] = useState(initialPosts || []);
   const [page, setPage] = useState(1); // 0 je prvych 5
   const [isLoading, setIsLoading] = useState(false);
@@ -87,7 +93,7 @@ export default function BlogCardList({ initialPosts }) {
       </div>
       {hasMore && (
         <div ref={ref} className="hasMoreText">
-          {isLoading ? "Loading more posts..." : "Scroll to load more"}
+          {isLoading ? <Spinner /> : "Scroll to load more"}
         </div>
       )}
     </div>

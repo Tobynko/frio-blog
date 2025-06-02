@@ -3,8 +3,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { postType } from "../src/app/actions/fetchPosts";
 
-export default function BlogCard({ post }) {
+export default function BlogCard({ post }: { post: postType }) {
   return (
     <Link href={`/post/${post.id}`} key={post.id}>
       <motion.div
