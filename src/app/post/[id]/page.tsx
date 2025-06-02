@@ -1,5 +1,5 @@
 import { fetchPostID } from "../../actions/fetchPosts";
-import { postPageType } from "../../actions/fetchPosts";
+import { postPageType } from "../../actions/fetchPosts.d";
 import BlogPost from "../../../../components/blogPost";
 
 export default async function PostPage({
